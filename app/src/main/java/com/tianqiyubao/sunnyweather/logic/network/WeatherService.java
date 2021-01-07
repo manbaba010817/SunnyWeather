@@ -1,8 +1,8 @@
 package com.tianqiyubao.sunnyweather.logic.network;
 
-
-
 import com.tianqiyubao.sunnyweather.SunnyWeatherApplication;
+import com.tianqiyubao.sunnyweather.logic.model.DailyResponse;
+import com.tianqiyubao.sunnyweather.logic.model.RealtimeResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
