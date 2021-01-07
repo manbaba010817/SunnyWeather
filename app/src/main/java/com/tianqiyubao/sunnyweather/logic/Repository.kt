@@ -3,6 +3,7 @@ package com.tianqiyubao.android.logic
 import androidx.lifecycle.liveData
 import com.tianqiyubao.android.logic.network.SunnyWeatherNetwork
 import com.tianqiyubao.sunnyweather.logic.dao.PlaceDao
+import com.tianqiyubao.sunnyweather.logic.model.Place
 import com.tianqiyubao.sunnyweather.logic.model.Weather
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

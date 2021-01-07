@@ -3,7 +3,6 @@ package com.tianqiyubao.sunnyweather.ui.weather
 import android.content.Context
 import android.graphics.Color
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +10,11 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.observe
 import com.tianqiyubao.sunnyweather.R
 import com.tianqiyubao.sunnyweather.logic.model.Weather
 import com.tianqiyubao.sunnyweather.logic.model.getSky

@@ -1,4 +1,4 @@
-package com.tianqiyubao.android.ui.place
+package com.tianqiyubao.sunnyweather.ui.place
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,16 +8,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
-
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.tianqiyubao.android.ui.place.PlaceViewModel
 import com.tianqiyubao.sunnyweather.MainActivity
 import com.tianqiyubao.sunnyweather.R
-import com.tianqiyubao.sunnyweather.ui.place.PlaceAdapter
 import com.tianqiyubao.sunnyweather.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.fragment_place.*
+
+
 
 class PlaceFragment : Fragment() {
 
@@ -34,7 +35,7 @@ class PlaceFragment : Fragment() {
 
         if(activity is MainActivity && viewModel.isPlaceSaved()){
             val place =viewModel.getSavedPlace();
-            val intent=Intent(context,WeatherActivity::class.java).apply {
+            val intent=Intent(context, WeatherActivity::class.java).apply {
                 putExtra("location_lng",place.location.lng)
                 putExtra("location_lat",place.location.lat)
                 putExtra("place_name",place.name)
@@ -73,4 +74,5 @@ class PlaceFragment : Fragment() {
             }
         })
     }
+
 }

@@ -1,12 +1,15 @@
 package com.tianqiyubao.sunnyweather.ui.weather
 
-import android.location.Location
+
+
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.tianqiyubao.android.logic.Repository
+import com.tianqiyubao.sunnyweather.logic.model.Location
 
-class WeatherViewModel :ViewModel() {
+
+class WeatherViewModel : ViewModel() {
 
     private val locationLiveData = MutableLiveData<Location>()
 

@@ -1,5 +1,6 @@
 package com.tianqiyubao.sunnyweather.ui.place;
 
+
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,16 +8,15 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.tianqiyubao.android.ui.place.PlaceFragment;
 import com.tianqiyubao.sunnyweather.R;
 import com.tianqiyubao.sunnyweather.logic.model.Place;
 import com.tianqiyubao.sunnyweather.ui.weather.WeatherActivity;
 
 import java.util.List;
+
 
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> {
     PlaceFragment fragment;
